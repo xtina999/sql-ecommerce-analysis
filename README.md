@@ -9,7 +9,7 @@
 
 ## 📎 SQL код
 Повний SQL-запит знаходиться у файлі:
-/sql/ecommerce_analysis.sql
+👉 [Переглянути SQL запит](./sql/ecommerce_analysis.sql)
 
 ## 🎯 Завдання
 - Аналіз створення акаунтів  
