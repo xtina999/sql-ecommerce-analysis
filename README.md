@@ -72,7 +72,7 @@ Dashboard створено в Looker Studio.
 ---
 
 ## 📸 Dashboard Preview
-![Dashboard](images/dashboard.png)
+![Dashboard](images/image.png)
 
 ---
 
