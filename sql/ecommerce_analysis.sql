@@ -16,9 +16,6 @@ WITH account_metrics AS (
     GROUP BY date, sp.country, a.send_interval, a.is_verified, a.is_unsubscribed
 ),
 
-
-
-
 -- CTE для розрахунку метрик емейлів
 email_metrics AS (
     SELECT
@@ -40,18 +37,12 @@ email_metrics AS (
     GROUP BY sent_day, sp.country
 ),
 
-
-
-
 -- Об'єднання даних з обох CTE через UNION ALL
 unified_metrics AS (
     SELECT * FROM account_metrics
     UNION ALL
     SELECT * FROM email_metrics
 ),
-
-
-
 
 -- Агрегація даних після об'єднання
 aggregated_metrics AS (
@@ -68,9 +59,6 @@ aggregated_metrics AS (
     FROM unified_metrics
     GROUP BY date, country, send_interval, is_verified, is_unsubscribed
 ),
-
-
-
 
 -- Загальні метрики по країнах з віконними функціями
 total_country_metrics AS (
